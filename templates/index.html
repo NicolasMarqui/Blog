@@ -1,0 +1,32 @@
+{% include 'header.html' %}
+
+{% block content %}
+
+    <div class="main-container">
+        
+        <div class="hero-wrapper">
+            {% include 'components/nav.html' %}
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-9">
+                        {% for i in range %}
+                            {% include 'components/posts.html' %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="hidden-xs col-md-3">
+                        menu
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}
+
+{% include 'footer.html' %}
