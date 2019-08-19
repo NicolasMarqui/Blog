@@ -58,11 +58,14 @@ body, html {
 .main-container .hero-wrapper {
   height: 50vh;
   width: 100%;
-  background-color: #f8f8f8;
+  background-image: url("https://images.pexels.com/photos/1246078/pexels-photo-1246078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
 }
 
 .main-container .content {
   padding: 50px 0;
+  background-color: #f8f8f8;
 }
 
 .main-container .content .post-wrapper {
@@ -104,6 +107,11 @@ body, html {
   display: block;
 }
 
+.main-container .content .menu-wrapper {
+  background-color: gray;
+  padding: 14px 0;
+}
+
 .main-container .content .menu-wrapper ul {
   list-style: none;
   padding: 0;
@@ -112,5 +120,22 @@ body, html {
 
 .main-container .content .menu-wrapper ul li {
   padding: 10px 0;
+}
+
+.main-container .content .menu-wrapper ul li a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-container .content .menu-wrapper ul li:hover {
+  background-color: #fff;
+}
+
+.main-container .content .menu-wrapper ul li:hover a {
+  color: #000;
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
 }
 /*# sourceMappingURL=styles.css.map */
