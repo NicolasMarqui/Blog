@@ -1,6 +1,9 @@
+{% block content %}
+
+{% for posts in data %}
 <div class="post-wrapper">
     <div class="date-corner">
-        <span>11</span><span>05</span>
+        <span>{{ posts.diaPublicado }}</span><span> {{ posts.mesPublicado }} </span>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -9,21 +12,28 @@
             </div>
 
             <div class="col-xs-12 col-md-8">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa qui odit quam voluptatibus doloremque libero eligendi asperiores ratione, molestiae mollitia quidem blanditiis repellat vero nulla!
+
+                <h2> {{ posts.titulo }} </h2>
+                <p class="autor-post">Publicado por: <strong> {{ posts.autor }}</strong> </p>
+
+                
+                {{posts.mensagem}}
+
+                <div class="buttons">
+                    <a href="#">Leia Mais</a>
+                </div>
 
                 <div class="tags">
                     <ul>
                         <li><a href="#">Fatec</a></li>
-                        <li><a href="#">4° Semestre</a></li>
-                        <li><a href="#">Estrutura de dados</a></li>
+                        <li><a href="#">{{ posts.semestre }}° Semestre</a></li>
+                        <li><a href="#"> {{ posts.discplina }} </a></li>
                     </ul>
-                </div>
-
-                <div class="buttons">
-                    <a href="#">Leia Mais</a>
-                    <a href="#">Teste</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+{% endfor %}
+
+{% endblock %}

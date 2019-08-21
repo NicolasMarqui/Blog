@@ -104,6 +104,14 @@ body, html {
   margin: 0;
 }
 
+.main-container .content .post-wrapper h2 {
+  margin: 0;
+}
+
+.main-container .content .post-wrapper .autor-post {
+  font-size: 10px;
+}
+
 .main-container .content .post-wrapper img {
   height: 100%;
   width: 100%;

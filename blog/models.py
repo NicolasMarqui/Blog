@@ -13,3 +13,9 @@ class Posts(models.Model):
 
     def __str__(self):
         return self.titulo
+
+    def diaPublicado(self): 
+        return self.data.strftime('%d')
+
+    def mesPublicado(self):
+        return self.data.strftime('%m')
