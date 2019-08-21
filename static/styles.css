@@ -36,6 +36,7 @@ body, html {
 .main-container .nav-wrapper h1 {
   font-size: 24px;
   margin: 0;
+  color: #fff;
 }
 
 .main-container .nav-wrapper .menu ul {
@@ -51,7 +52,7 @@ body, html {
 
 .main-container .nav-wrapper .menu ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -65,7 +66,7 @@ body, html {
 
 .main-container .content {
   padding: 50px 0;
-  background-color: #f8f8f8;
+  background-color: #393939;
 }
 
 .main-container .content .post-wrapper {
@@ -73,6 +74,30 @@ body, html {
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
   padding: 24px 10px;
   margin: 25px 0;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.main-container .content .post-wrapper .date-corner {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  background-color: #000;
+}
+
+.main-container .content .post-wrapper .date-corner span {
+  color: #fff;
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  z-index: 2;
+}
+
+.main-container .content .post-wrapper .date-corner span:last-child {
+  margin-top: -15px;
 }
 
 .main-container .content .post-wrapper:first-child {
